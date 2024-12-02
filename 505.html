@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำเพลง</title>
+    <!-- Import Google Font: Sriracha -->
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Sriracha', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* --- Header --- */
+        header {
+            background-color: #ff4d4d;
+            padding: 20px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            color: white;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1rem;
+        }
+        /* --- Main Content --- */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #ff4d4d;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+        .song-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .song-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .song-info {
+            max-width: 70%;
+        }
+        .song-title {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .play-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .play-btn:hover {
+            background-color: #e60000;
+        }
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: white;
+            background-color: #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎵 แนะนำเพลงตามอารมณ์ 🎵</h1>
+        <p>ค้นหาเพลงที่เหมาะกับอารมณ์ของคุณ!</p>
+    </header>
+    <div class="container">
+       <!-- เพลงป๊อป -->
+        <div class="category">
+            <h3>เพลงป๊อป</h3>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">JAONAAY - ดึกแล้วอย่าเพิ่งกลับ</div>
+                </div>
+                <a href="https://youtu.be/Mqw3mpFydJ0?si=TN8kqrklDp-NgY6Q" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">Jeff Satur - วันนี้คือพรุ่งนี้ของเมื่อวาน</div>
+                </div>
+                <a href="https://youtu.be/AfeEOrQHBAo?si=bgLHUMPkRRiFF48Q" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+        </div>
+        <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">NewJeans (뉴진스) 'OMG' Official MV</div>
+                </div>
+                <a href="https://youtu.be/sVTy_wmn5SU?si=8nvlmEnNCiv27ttO" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">テトリス / 重音テトSV</div>
+                </div>
+                <a href="https://youtu.be/Soy4jGPHr3g?si=11MXxtdzrMhjiG9F" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">WIM - Mr. Feelgood</div>
+                </div>
+                <a href="https://youtu.be/FBqAnxe0tj0?si=yNSdk-l2gRoChMIT" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+        
+         <!-- เพลงสากล -->
+        <div class="category">
+            <h3>เพลงสากล</h3>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">Post Malone, Swae Lee - Sunflower</div>
+                </div>
+                <a href="https://youtu.be/ApXoWvfEYVU?si=ycoPRebmPpwcdaCu" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">Shape of You - Ed Sheeran</div>
+                </div>
+                <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+        </div>
+         <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">Zack Tabudlo - Pano</div>
+                </div>
+                <a href="https://youtu.be/s3eKZJI-oKA?si=gSZsXzhdJWXQcMh3" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div> 
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">elijah woods - 24/7, 365</div>
+                </div>
+                <a href="https://youtu.be/r8EVmdyJp-M?si=RocrYUgVvhEaqTp0" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div> 
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">One Direction - Perfect</div>
+                </div>
+                <a href="https://youtu.be/Ho32Oh6b4jc?si=aQn4yGhXDq6cBNNd" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+
+
+        <!-- เพลงรัก -->
+        <div class="category">
+            <h3>เพลงรัก</h3>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">Perfect - Ed Sheeran</div>
+                </div>
+                <a href="https://www.youtube.com/watch?v=2Vv-BfVoq4g" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">ให้เธอรู้ (Beside) : FREEHAND</div>
+                </div>
+                <a href="https://youtu.be/rfIKmv46DRg?si=ixVE-mGM4-yzm-Ox" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">PiXXiE - เกินต้าน (Too Cute)</div>
+                </div>
+                <a href="https://youtu.be/9zXeLZTBd80?si=Uwe7KUqmz-Yb2-F5" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">YEW - หมวกเมฆสีรุ้ง</div>
+                </div>
+                <a href="https://youtu.be/SJNFhQ1gdLo?si=02lfEaaXoZzi_jmp" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">pY-1 - ตั้งใจไม่ได้หลอกหนา Feat. 2Ectasy</div>
+                </div>
+                <a href="https://youtu.be/qKSvyW7HVOk?si=1g_NL4IdY5RXpihq" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+    
+      
+        <!-- เพลงเศร้า -->
+        <div class="category">
+            <h3>เพลงเศร้า</h3>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">ท้ายปี - Only Monday</div>
+                </div>
+                <a href="https://youtu.be/GIVyXAs64Qw?si=oi3E386Uq9mNFthk" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+             <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">ทุกความทรงจำ - Only Monday</div>
+                </div>
+                <a href="https://youtu.be/-mEs2laCcxA?si=oCFY2k5T7hzGgCK6" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">หากจะเพียงขอ(Sincare) - PURPEECH</div>
+                </div>
+                <a href="https://youtu.be/Ht_6puWUJH4?si=aFMBP_EUlY6JsSQU" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+        </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">SARAN - ห้องที่ว่างเปล่า</div>
+                </div>
+                <a href="https://youtu.be/nFCS8Bs58GA?si=oZUqr6P1C6BAGNZG" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+             <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">ความทรงจำ - วิโอเลต วอเทียร์</div>
+                </div>
+                <a href="https://youtu.be/7ngPHRKuiYY?si=_E28_28kJffN6rLw" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+
+        <!-- เพลงสนุกสนาน -->
+        <div class="category">
+            <h3>เพลงสนุกสนาน</h3>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">หมูเด้ง Moo Deng Reggaeton</div>
+                </div>
+                <a href="https://youtu.be/AdHps0Mizdk?si=Sk-TIRt8UMAEAIVG" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+            <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">ROSÉ & Bruno Mars - APT.</div>
+                </div>
+                <a href="https://youtu.be/ekr2nIex040?si=lkLFOX8oqMOOCBkY" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+              <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">PSY - GANGNAM STYLE</div>
+                </div>
+                <a href="https://youtu.be/9bZkp7q19f0?si=AEGJPLP2bSdUkspL" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+              <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">ILLIT (아일릿) ‘Magnetic’</div>
+                </div>
+                <a href="https://youtu.be/Vk5-c_v4gMU?si=7A2PRlV8BfJBi-4a" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+              <div class="song-card">
+                <div class="song-info">
+                    <div class="song-title">Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars</div>
+                </div>
+                <a href="https://youtu.be/OPf0YbXqDm0?si=OSI1ZWtO9oyFi8aM" target="_blank">
+                    <button class="play-btn">ฟังเพลง</button>
+                </a>
+            </div>
+        </div>
+
+     
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Music Recommendations | ทุกสิทธิ์สงวน</p>
+    </footer>
+</body>
+</html>
